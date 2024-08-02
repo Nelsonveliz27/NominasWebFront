@@ -1,0 +1,154 @@
+
+.inicio{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;    
+}
+
+.Proveedores{
+position: relative;
+background-color: black;
+overflow: hidden;
+margin: 35px;
+width: 300px;
+height: 300px;
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 10px;
+color: white;
+}
+/*   
+}
+
+/*.Proveedores:hover {
+
+background-color: blue;
+transition: 0.2seg;
+margin: 20px;
+width: 300px;
+height: 300px;
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 10px;
+text-decoration: none;
+color: #000000;
+
+
+}*/
+.Opciones{
+display: flex;
+flex-direction: column;
+align-items:start;
+width: 180px;
+background-color: rgba(255, 255, 255, 0.534);
+padding: 1.5rem 2rem;
+box-shadow: 0 8px 24px hsla(0, 0%, 0%, .15);
+border-radius: 1rem;
+position: absolute;
+bottom: -10rem;
+left: 0;
+right: 0;
+margin-inline: auto;
+opacity: 0;
+transition: opacity 1s 1s;
+
+}
+
+
+.Proveedores:hover .Opciones{
+animation: show-data 0.5s forwards;
+opacity: 1;
+transition: opacity .3s;
+}
+ul {
+margin-top: 15px;
+margin-bottom: 15px;
+
+
+}
+
+ul link{
+color: rgb(5, 0, 0);
+
+padding-left: 10px;
+padding-right: 10px;
+
+
+}
+
+link{
+text-decoration: none;
+
+
+}
+
+link:hover {
+
+border-radius: 5px;
+background-color: rgb(250, 250, 250);
+align-content: center;
+display: flex;
+flex-wrap: nowrap;
+
+transition: ease-in;
+text-decoration-style: none;
+margin-left: 10px;
+font-weight: bolder;
+}
+
+.Proveedores:hover{
+animation: remove-overflow 1s forwards;
+}
+
+.Proveedores:not(:hover){
+animation: show-overflow 0.5s forwards;
+}
+
+.Proveedores:not(:hover) .Opciones{
+animation: remove-data 0.5s forwards;
+}
+
+
+
+
+
+@keyframes show-data{
+50%{
+    transform: translateY(-10rem);  
+}
+100%{
+    transform: translateY(-7rem);
+}
+}
+
+@keyframes remove-overflow{
+to{
+    overflow: initial;
+}
+}
+
+@keyframes remove-data{
+0%{
+    transform: translateY(-7rem);
+}
+50%{
+    transform: translateY(-10rem);
+}
+100%{
+    transform: translateY(.5rem);
+}
+}
+
+@keyframes show-overflow{
+0%{
+overflow: initial;
+pointer-events: none;
+} 
+50%{
+overflow: hidden;
+}
+}

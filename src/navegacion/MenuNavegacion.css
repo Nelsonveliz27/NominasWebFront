@@ -1,0 +1,22 @@
+/******HEADER******/
+
+.header {
+    display: flex;
+    margin-top: 30px;
+    
+    
+
+    justify-content: end;
+   
+   
+
+}
+
+.Info-Usuario{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    
+    
+   
+    color: white;
+}
